@@ -1,4 +1,4 @@
-import { ReactFlow, MiniMap, Controls, Background } from "@xyflow/react";
+import { ReactFlow, Background } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 
 const Flowchart = () => {
@@ -60,7 +60,7 @@ const Flowchart = () => {
 
   // Render the React Flow component
   return (
-    <div style={{ height: "450px" }}>
+    <div style={{ height: "450px", pointerEvents: "none" }}> {/* Disable pointer events */}
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -68,6 +68,7 @@ const Flowchart = () => {
         zoomOnScroll={false} // Disable zoom on scroll
         panOnScroll={false} // Disable panning on scroll
         draggable={false} // Disable dragging of nodes
+        style={{ pointerEvents: "none" }} // Also disable pointer events on the ReactFlow component
       >
         <Background />
       </ReactFlow>

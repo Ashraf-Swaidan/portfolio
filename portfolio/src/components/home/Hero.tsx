@@ -1,6 +1,6 @@
 import { useState, MouseEvent } from "react";
 import './home.css';
-
+import ParticleBackground from "../ParticleBackground";
 const Hero = () => {
   const [cursorPosition, setCursorPosition] = useState<{ x: number; y: number }>({ x: -200, y: -200 });
 
@@ -18,7 +18,14 @@ const Hero = () => {
   };
 
   return (
+    <>
+    
+    
     <section className="hero p-10 md:p-20 flex flex-col md:flex-row-reverse items-center justify-center bg-primary max-w-screen-xl mx-auto gap-8">
+      <div className="relative">
+        <ParticleBackground />
+      </div>
+      
       
       {/* Right Side - Profile Picture */}
       <div
@@ -54,7 +61,8 @@ const Hero = () => {
           See My Work
         </button>
       </div>
-    </section>
+    </section> 
+     </>
   );
 };
 

@@ -9,6 +9,7 @@ function App() {
     <Router>
       <div>
         <Routes>
+          
           <Route path="/" element={<HomePage />} />
           <Route path="/project/:id" element={<ProjectDetails />} />
           <Route path="/papion" element={<PapionProjectPage />} />
