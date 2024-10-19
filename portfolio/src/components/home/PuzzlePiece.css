@@ -1,0 +1,19 @@
+
+  
+  @keyframes drop {
+    0% {
+      top: -100px; /* Starting above the visible area */
+      opacity: 0; /* Initially invisible */
+    }
+    50% {
+      opacity: 1; /* Becomes visible halfway */
+    }
+    100% {
+      top: 0; /* Ends at its original position */
+    }
+  }
+  
+  .animate-drop {
+    animation: drop 2s forwards; /* Trigger the drop animation */
+  }
+  

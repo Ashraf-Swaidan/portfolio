@@ -30,7 +30,7 @@ const Hero = () => {
         <img
           src="/pfp-colored.jpg"
           alt="Ash's Profile Picture"
-          className="absolute w-96 object-cover transition duration-300"
+          className="absolute w-96 object-cover transition duration-300 rounded-xl"
           style={{
             clipPath: `circle(100px at ${cursorPosition.x}px ${cursorPosition.y}px)`,
             zIndex: 1,
