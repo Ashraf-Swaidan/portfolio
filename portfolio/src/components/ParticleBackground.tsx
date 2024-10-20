@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './ParticleBackground.css'; // Import the CSS styles
 
 const ParticleBackground = () => {
