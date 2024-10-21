@@ -1,8 +1,9 @@
-import { useState, MouseEvent } from "react";
-import './home.css';
-import ParticleBackground from "../ParticleBackground";
+import { useState, MouseEvent, useRef } from "react";
+import ParticleBackground from "./ParticleBackground";
+
 const Hero = () => {
   const [cursorPosition, setCursorPosition] = useState<{ x: number; y: number }>({ x: -200, y: -200 });
+  const heroRef = useRef<HTMLDivElement>(null); // Reference for the hero section
 
   const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
     const img = e.currentTarget.querySelector('img:first-child') as HTMLImageElement;
@@ -18,14 +19,13 @@ const Hero = () => {
   };
 
   return (
-    <>
-    
-    
-    <section className="hero p-10 md:p-20 flex flex-col md:flex-row-reverse items-center justify-center bg-primary max-w-screen-xl mx-auto gap-8">
+    <section 
+      ref={heroRef} // Attach ref here
+      className="hero p-10 md:p-20 flex flex-col md:flex-row-reverse items-center justify-center bg-primary max-w-screen-xl mx-auto gap-8"
+    >
       <div className="relative">
-        <ParticleBackground />
+        <ParticleBackground heroRef={heroRef} /> {/* Pass the ref to ParticleBackground */}
       </div>
-      
       
       {/* Right Side - Profile Picture */}
       <div
@@ -62,7 +62,6 @@ const Hero = () => {
         </button>
       </div>
     </section> 
-     </>
   );
 };
 

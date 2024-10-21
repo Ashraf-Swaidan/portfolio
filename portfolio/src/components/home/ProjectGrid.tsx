@@ -30,7 +30,7 @@ const ProjectGrid = () => {
   return (
     <div className="project-grid max-w-screen-xl mx-auto p-4">
       {/* Papion Card */}
-      <PapionHeroBanner />
+      <PapionHeroBanner isDetailPage={false} />
    
 
       {/* Project Cards */}

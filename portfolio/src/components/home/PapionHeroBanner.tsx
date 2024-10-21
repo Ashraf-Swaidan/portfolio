@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom";
 import StackIcon from "tech-stack-icons";
 
-const PapionHeroBanner = () => {
+interface PapionHeroBannerProps {
+  isDetailPage: boolean;
+}
+
+
+const PapionHeroBanner: React.FC<PapionHeroBannerProps> = ({isDetailPage}) => {
   return (
     <section className="relative bg-gradient-to-br from-red-50 to-white w-full py-20 flex items-center justify-center overflow-hidden rounded-t-xl border border-b-0">
 
@@ -22,14 +28,17 @@ const PapionHeroBanner = () => {
             <StackIcon name={'bootstrap5'} className="w-10 h-10" />
             <StackIcon name={'materialui'} className="w-10 h-10" />
           </div>
+          {!isDetailPage && 
           <div className="flex justify-center sm:justify-start space-x-4 ">
+            <a href={'/papion'}>
             <button className="bg-secondary text-white px-6 py-2 rounded hover:bg-gray-700 transition-all">
               Explore
             </button>
+            </a>
             <button className="bg-gray-100 text-secondary px-6 py-2 rounded hover:bg-gray-200 transition-all">
               Case Study
             </button>
-          </div>
+          </div>}
         </div>
 
         {/* Image Layers Container */}

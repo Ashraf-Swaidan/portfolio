@@ -1,8 +1,14 @@
-import React from 'react'
+import PapionHeroBanner from './home/PapionHeroBanner'
+import CaseStudy from './papion/CaseStudy'
+import PapionProjectDetails from './papion/PapionProjectDetails'
 
 const PapionProjectPage = () => {
   return (
-    <div>PapionProjectPage</div>
+    <div>
+      <PapionHeroBanner isDetailPage={true} />
+      <PapionProjectDetails />
+      <CaseStudy />
+    </div>
   )
 }
 

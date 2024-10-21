@@ -1,5 +1,4 @@
 import Flowchart from "./FlowChart";
-import "./home.css"; // Assuming you continue styling here
 import PuzzlePiece from "./PuzzlePiece";
 import Timeline from "./Timeline";
 
