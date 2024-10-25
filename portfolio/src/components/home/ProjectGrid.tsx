@@ -5,7 +5,7 @@ const projects = [
   {
     year: '2020',
     title: 'Auctions',
-    description: 'An online auction platform that connects buyers and sellers seamlessly.',
+    description: 'An online practical auction platform that connects buyers and sellers seamlessly.',
     techStack: ['python', 'django', 'mysql', 'html5', 'css3', 'js', 'bootstrap5'],
     image: '/auctions.png',
     url: '/auctions'
@@ -13,7 +13,7 @@ const projects = [
   {
     year: '2021',
     title: 'Coducation',
-    description: 'An interactive coding education platform that offers coding challenges and tutorials.',
+    description: 'An interactive coding education platform for a community of students and mentors.',
     techStack: ['reactjs', 'reactrouter', 'php', 'mysql', 'css3', 'bootstrap5'],
     image: '/coducation.png',
     url: '/coducation'
@@ -21,7 +21,7 @@ const projects = [
   {
     year: '2024',
     title: 'Twodo',
-    description: 'A task management app that helps you organize and prioritize your daily tasks.',
+    description: 'A Project & Todo management app that helps you organize and prioritize your daily and heavy tasks.',
     techStack: ['reactjs', 'vitejs', 'reactrouter', 'nodejs', 'mongodb', 'mongoose', 'tailwindcss', 'css3'],
     image: '/twodo.png',
     url: '/twodo'
