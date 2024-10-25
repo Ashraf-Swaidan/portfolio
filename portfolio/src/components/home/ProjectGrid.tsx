@@ -1,4 +1,4 @@
-import StackIcon from "tech-stack-icons"; // Import StackIcon for tech stack icons
+import StackIcon from "tech-stack-icons";
 import PapionHeroBanner from './PapionHeroBanner';
 
 const projects = [
@@ -8,6 +8,7 @@ const projects = [
     description: 'An online auction platform that connects buyers and sellers seamlessly.',
     techStack: ['python', 'django', 'mysql', 'html5', 'css3', 'js', 'bootstrap5'],
     image: '/auctions.png',
+    url: '/auctions'
   },
   {
     year: '2021',
@@ -15,6 +16,7 @@ const projects = [
     description: 'An interactive coding education platform that offers coding challenges and tutorials.',
     techStack: ['reactjs', 'reactrouter', 'php', 'mysql', 'css3', 'bootstrap5'],
     image: '/coducation.png',
+    url: '/coducation'
   },
   {
     year: '2024',
@@ -22,6 +24,7 @@ const projects = [
     description: 'A task management app that helps you organize and prioritize your daily tasks.',
     techStack: ['reactjs', 'vitejs', 'reactrouter', 'nodejs', 'mongodb', 'mongoose', 'tailwindcss', 'css3'],
     image: '/twodo.png',
+    url: '/twodo'
   },
   // Add more projects as needed
 ];
@@ -46,9 +49,11 @@ const ProjectGrid = () => {
                 <StackIcon key={tech} name={tech} className="w-5 h-5" />
               ))}
             </div>
+            <a href={project.url}>
             <button className="bg-secondary text-white px-4 py-2 rounded hover:bg-gray-700 transition">
               Explore
             </button>
+            </a>
           </div>
         ))}
       </div>
