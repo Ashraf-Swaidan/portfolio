@@ -1,9 +1,64 @@
-import React from 'react'
+import React from 'react';
+import { FaGithub, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer className="bg-white text-black py-12">
+      <div className="flex flex-col items-center space-y-6">
+        
+        {/* Resume Button */}
+        <a 
+          href="/path/to/resume.pdf"  // Replace with your resume link
+          download
+          className="text-2xl font-semibold hover:underline"
+        >
+          Download My Resume
+        </a>
 
-export default Footer
+        {/* Social Media Icons */}
+        <div className="flex space-x-6 text-4xl">
+          <a 
+            href="https://github.com/yourusername" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-gray-600"
+          >
+            <FaGithub />
+          </a>
+          <a 
+            href="https://facebook.com/yourusername" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-gray-600"
+          >
+            <FaFacebook />
+          </a>
+          <a 
+            href="https://instagram.com/yourusername" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-gray-600"
+          >
+            <FaInstagram />
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/ashraf-swaidan-9aaa612b1/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hover:text-gray-600"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
+
+        {/* Contact Information */}
+        <div className="text-lg text-gray-700 text-center">
+          <p>Phone: +961 76 350 373</p> {/* Replace with your phone number */}
+          <p>Email: ashraf.swaidan.13@gmail.com</p> {/* Replace with your email */}
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

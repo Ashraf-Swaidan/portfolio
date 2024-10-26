@@ -36,7 +36,7 @@ const TwodoDetailsPage: React.FC = () => {
                     Try Twodo
                   </div>
                   <div>
-                    <img src='/lwogo.png' className='w-5 h-5'/>
+                    <img src='/lwogo.png' className='w-5 h-5 '/>
                   </div>
                 </div>
                
@@ -65,7 +65,7 @@ const TwodoDetailsPage: React.FC = () => {
           {/* Right Half - Image or GIF */}
           <div className="md:w-1/2 flex justify-center">
             <img
-              src="/DemoTwodo.gif"
+              src="/twodoGif.gif"
               alt="Twodo App Preview"
               className="shadow-md rounded-xl w-full "
             />

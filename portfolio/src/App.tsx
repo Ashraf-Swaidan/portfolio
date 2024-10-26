@@ -4,6 +4,7 @@ import TwodoDetailsPage from './components/TwodoDetailsPage';
 import PapionProjectPage from './components/PapionProjectPage';
 import Footer from './components/Footer';
 import AuctionsDetailsPage from './components/AuctionsDetailsPage';
+import CoducationDetailsPage from './components/CoducationDetailsPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/twodo" element={<TwodoDetailsPage />} />
           <Route path="/papion" element={<PapionProjectPage />} />
           <Route path="/auctions" element={<AuctionsDetailsPage />} />
+          <Route path='/coducation' element={<CoducationDetailsPage />}/>
         </Routes>
         <Footer />
       </div>
