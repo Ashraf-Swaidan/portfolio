@@ -1,5 +1,5 @@
 import StackIcon from "tech-stack-icons";
-
+import { Link } from "react-router-dom";
 interface PapionHeroBannerProps {
   isDetailPage: boolean;
   onScrollToCaseStudy?: () => void;
@@ -30,11 +30,11 @@ const PapionHeroBanner: React.FC<PapionHeroBannerProps> = ({isDetailPage, onScro
           </div>
           {!isDetailPage ? (
             <div className="flex justify-center sm:justify-start space-x-4">
-              <a href={'/papion'}>
+              <Link to={'/papion'}>
                 <button className="bg-secondary text-white px-6 py-2 rounded hover:bg-gray-700 transition-all">
                   Explore
                 </button>
-              </a>
+              </Link>
               <a href={'/papion'}>
               <button className="bg-gray-100 text-secondary px-6 py-2 rounded hover:bg-gray-200 transition-all">
                 Case Study
