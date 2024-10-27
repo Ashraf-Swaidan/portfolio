@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaGithub, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
@@ -18,7 +17,7 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="flex space-x-6 text-4xl">
           <a 
-            href="https://github.com/yourusername" 
+            href="https://github.com/Ashraf-Swaidan" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-gray-600"
@@ -26,7 +25,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a 
-            href="https://facebook.com/yourusername" 
+            href="https://www.facebook.com/share/VujJA8HHxkXK9zHK/?mibextid=LQQJ4d" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-gray-600"
@@ -34,7 +33,7 @@ const Footer = () => {
             <FaFacebook />
           </a>
           <a 
-            href="https://instagram.com/yourusername" 
+            href="https://instagram.com/_ashraf_swaidan_" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-gray-600"

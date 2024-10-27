@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import PapionHeroBanner from './home/PapionHeroBanner';
 import CaseStudy from './papion/CaseStudy';
 import PapionProjectDetails from './papion/PapionProjectDetails';

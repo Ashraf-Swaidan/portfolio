@@ -1,4 +1,3 @@
-import React from "react";
 import PapionFlowchart from "./PapionFlowChart";
 
 const PapionProjectDetails = () => {
@@ -13,7 +12,7 @@ const PapionProjectDetails = () => {
         <h2 className="text-3xl font-semibold mb-6 text-gray-700">Overview</h2>
         <p className="text-lg leading-relaxed text-gray-600">
           Papion Business System is a web application designed to streamline the
-          workflow of an Event Decorations Company. Tailopink specifically for
+          workflow of an Event Decorations Company. Tailored specifically for
           the business, it caters to the needs of the entire hierarchy of
           company members, from owners, managers, and inventory personnel to
           sales representatives.
