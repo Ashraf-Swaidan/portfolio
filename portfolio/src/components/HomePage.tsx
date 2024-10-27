@@ -1,13 +1,25 @@
 import Hero from './home/Hero';
 import WhoAmI from './home/WhoAmI';
 import ProjectGrid from './home/ProjectGrid';
+import { useRef } from 'react';
 
 const HomePage = () => {
+
+  const projectsRef = useRef<HTMLDivElement>(null);
+
+  // Function to scroll to projects
+  const scrollToProjects = () => {
+    projectsRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div>
-      <Hero />
+      <Hero onScrollToProjects={scrollToProjects}/>
       <WhoAmI />
-      <ProjectGrid />
+      <div ref={projectsRef}>
+        <ProjectGrid />
+      </div>
+      
     </div>
   );
 };

@@ -1,7 +1,12 @@
 import { useState, MouseEvent, useRef } from "react";
 import ParticleBackground from "./ParticleBackground";
 
-const Hero = () => {
+interface HeroProps {
+  onScrollToProjects?: () => void;
+}
+
+
+const Hero:  React.FC<HeroProps> = ({onScrollToProjects}) => {
   const [cursorPosition, setCursorPosition] = useState<{ x: number; y: number }>({ x: -200, y: -200 });
   const heroRef = useRef<HTMLDivElement>(null); // Reference for the hero section
 
@@ -57,7 +62,7 @@ const Hero = () => {
         <p className="mt-4 text-md md:text-lg text-gray-700">
           I create real-world solutions. Let's build something amazing together!
         </p>
-        <button className="mt-8 px-6 py-2 bg-secondary text-primary font-semibold rounded-md hover:bg-gray-800">
+        <button onClick={onScrollToProjects} className="mt-8 px-6 py-2 bg-secondary text-primary font-semibold rounded-md hover:bg-gray-800">
           See My Work
         </button>
       </div>

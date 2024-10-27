@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub } from "react-icons/fa";
 import StackIcon from "tech-stack-icons";
-
+import { Link } from 'react-router-dom';
 const AuctionsDetailsPage: React.FC = () => {
   return (
     <div className="bg-white min-h-screen">
@@ -25,16 +25,16 @@ const AuctionsDetailsPage: React.FC = () => {
               <StackIcon name={'mysql'} className="w-10 h-10" />
             </div>
             <div className="flex space-x-4 mt-6">
-              <a
-                href="https://auctions-rf5r.onrender.com/"
+              <Link
+                to="https://auctions-rf5r.onrender.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded bg-black text-white font-medium hover:bg-gray-800 transition"
               >
                 <span>Try Auctions</span>
-              </a>
-              <a
-                href="https://github.com/Ashraf-Swaidan/commerce"
+              </Link>
+              <Link
+                to="https://github.com/Ashraf-Swaidan/commerce"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-gray-200 text-gray-900 font-medium hover:bg-gray-300 transition rounded"
@@ -43,7 +43,7 @@ const AuctionsDetailsPage: React.FC = () => {
                   <span>GitHub Repo</span>
                   <FaGithub className='w-5 h-5' />
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           

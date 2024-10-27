@@ -1,6 +1,8 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import StackIcon from "tech-stack-icons";
+import { Link } from "react-router-dom";
+
 
 const CoducationDetailsPage: React.FC = () => {
   return (
@@ -24,8 +26,8 @@ const CoducationDetailsPage: React.FC = () => {
               <StackIcon name={"css3"} className="w-10 h-10" />
             </div>
             <div className="flex space-x-4 mt-6">
-              <a
-                href="https://github.com/Ashraf-Swaidan/coducation"
+              <Link
+                to="https://github.com/Ashraf-Swaidan/coducation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-gray-200 text-gray-900 font-medium hover:bg-gray-300 transition rounded"
@@ -34,7 +36,7 @@ const CoducationDetailsPage: React.FC = () => {
                   <span>GitHub Repo</span>
                   <FaGithub className="w-5 h-5" />
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
 

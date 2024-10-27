@@ -7,7 +7,7 @@ const Footer = () => {
         
         {/* Resume Button */}
         <a 
-          href="/path/to/resume.pdf"  // Replace with your resume link
+          href="/Resume-Ashraf-Swaidan.pdf"  
           download
           className="text-2xl font-semibold hover:underline"
         >
@@ -52,8 +52,8 @@ const Footer = () => {
 
         {/* Contact Information */}
         <div className="text-lg text-gray-700 text-center">
-          <p>Phone: +961 76 350 373</p> {/* Replace with your phone number */}
-          <p>Email: ashraf.swaidan.13@gmail.com</p> {/* Replace with your email */}
+          <p>Phone: +961 76 350 373</p> 
+          <p>Email: ashraf.swaidan.13@gmail.com</p> 
         </div>
       </div>
     </footer>

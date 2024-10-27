@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Flowchart from "./FlowChart";
 import PuzzlePiece from "./PuzzlePiece";
 import Timeline from "./Timeline";
@@ -67,9 +68,11 @@ const WhoAmI = () => {
             processes into an automated system for my own venture. Curious about
             the solution?
           </p>
+          <Link to={'/papion'}>
           <button className="mt-6 px-6 py-2 sm:text-md text-sm  bg-secondary text-primary font-semibold rounded-md hover:bg-gray-800">
             Find out how I built the Papion System
           </button>
+          </Link>
         </div>
 
         

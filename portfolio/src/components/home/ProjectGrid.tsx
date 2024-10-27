@@ -1,5 +1,6 @@
 import StackIcon from "tech-stack-icons";
 import PapionHeroBanner from './PapionHeroBanner';
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -49,11 +50,11 @@ const ProjectGrid = () => {
                 <StackIcon key={tech} name={tech} className="w-5 h-5" />
               ))}
             </div>
-            <a href={project.url}>
+            <Link to={project.url}>
             <button className="bg-secondary text-white px-4 py-2 rounded hover:bg-gray-700 transition">
               Explore
             </button>
-            </a>
+            </Link>
           </div>
         ))}
       </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaGithub } from "react-icons/fa";
 import StackIcon from "tech-stack-icons";
+import { Link } from 'react-router-dom';
+
 const TwodoDetailsPage: React.FC = () => {
   return (
     <div className="bg-white min-h-screen">
@@ -25,8 +27,8 @@ const TwodoDetailsPage: React.FC = () => {
             
           </div>
             <div className="flex space-x-4 mt-6">
-              <a
-                href="https://twodo.vercel.app/"
+              <Link
+                to="https://twodo.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded bg-black text-white font-medium hover:bg-gray-800 transition"
@@ -40,9 +42,9 @@ const TwodoDetailsPage: React.FC = () => {
                   </div>
                 </div>
                
-              </a>
-              <a
-                href="https://github.com/Ashraf-Swaidan/Twodo"
+              </Link>
+              <Link
+                to="https://github.com/Ashraf-Swaidan/Twodo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-gray-200 text-gray-900 font-medium hover:bg-gray-300 transition rounded"
@@ -58,7 +60,7 @@ const TwodoDetailsPage: React.FC = () => {
                 </div>
                 
                  
-              </a>
+              </Link>
             </div>
           </div>
           
